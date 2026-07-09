@@ -118,12 +118,6 @@ BRAHMASTRA/
 ├── LICENSE
 └── README.md
 ```
-📊 Test Results
-Model	Vulnerable	Safe	Uncertain	Verdict
-Llama3	8/10	1	1	🔴 Highly Vulnerable
-Mistral	10/10	0	0	🔴🔴 Critically Vulnerable
-Phi	5/10	2	3	🟠 Moderately Vulnerable
-
 
 ---
 
