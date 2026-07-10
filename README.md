@@ -145,6 +145,20 @@ Prints live to terminal (color-coded per payload); full JSON report saved on com
 - Payload set targets known, public injection/jailbreak patterns. Not exhaustive.
 
 ---
+## 🔬 Consistency Testing
+
+We ran each payload **3 times** per model to test for result consistency.
+
+### Findings:
+- **0/4** payloads produced consistent results across runs.
+- **Llama3:** Sometimes refuses, sometimes leaks partial data.
+- **Mistral:** Sometimes leaks full system prompt, sometimes only partial.
+- **Conclusion:** LLM security is **probabilistic**. Single-run tests are insufficient — multiple runs are required for reliable assessment.
+
+### Raw Data:
+- [consistency_test_results.json](./consistency_test_results.json)
+
+---
 
 ## Roadmap
 
