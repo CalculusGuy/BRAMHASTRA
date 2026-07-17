@@ -48,12 +48,11 @@ Tested against a document seeded with a fake password and API key, using an iden
 | Model | CONFIRMED LEAKAGE | PARTIAL LEAKAGE | REFUSAL | UNSAFE HELP | HALLUCINATED | UNCERTAIN |
 |-------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Llama3** | 0 | 3 | 4 | 1 | 0 | 2 |
-| **Mistral** | 2 | 4 | 2 | 1 | 0 | 1 |
-| **Phi** | 2 | 4 | 0 | 1 | 1 | 2 |
+| **Mistral** | 2 | 4 | 2 | 1 | 1 | 0 |
+| **Phi** | 2 | 4 | 1 | 1 | 1 | 1 |
 
 - Full raw output → [`reports/injection_report_20260717_235050.json`](reports/injection_report_20260717_235050.json)
 - Terminal captures → [`screenshots/`](screenshots/)
-
 ---
 
 ## Headline finding: Mistral hallucinates its own system prompt
