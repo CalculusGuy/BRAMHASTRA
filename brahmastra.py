@@ -1,7 +1,7 @@
 # brahmastra.py
 # Phase 2 — AI Security Testing Framework
 # Author: Nilanjan Chowdhury
-# Date: July 2026 (Updated with Andrii's Taxonomy)
+# Date: July 2026 (Updated with Andrii's Taxonomy + Enhanced Reporting)
 
 import json
 import time
@@ -189,6 +189,13 @@ for model in MODELS:
         vuln_status, vuln_type = classify_response(result["response"])
         result["vulnerability"] = vuln_status
         result["vuln_type"] = vuln_type
+
+        # --- NEW FIELDS (Andrii's Suggestion) ---
+        result["evidence_span"] = result["response"][:200]
+        result["reviewer_note"] = ""
+        result["confidence"] = 85
+        result["raw_secret_exposed"] = False
+        result["transformed_secret_exposed"] = False
 
         if vuln_status == "CONFIRMED_LEAKAGE":
             print(f"{Fore.RED}  [LEAK] CONFIRMED LEAKAGE — {vuln_type}")
