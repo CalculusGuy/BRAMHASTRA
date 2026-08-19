@@ -234,6 +234,18 @@
   #result::-webkit-scrollbar{width:8px;}
   #result::-webkit-scrollbar-thumb{background:var(--border); border-radius:4px;}
 
+  .notice{
+    display:flex; align-items:flex-start; gap:12px;
+    background:rgba(255,107,107,0.07); border:1px solid rgba(255,107,107,0.3);
+    border-radius:6px; padding:14px 16px; margin-bottom:22px;
+  }
+  .notice .ico{color:var(--accent3); font-size:15px; line-height:1;}
+  .notice p{
+    font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--text-mid);
+    line-height:1.6;
+  }
+  .notice strong{color:var(--accent3); font-weight:700;}
+
   /* Taxonomy grid (real content: 6-category taxonomy) */
   .tax-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:10px; overflow:hidden;}
   .tax-card{background:var(--surface); padding:26px 22px; transition:background 0.2s;}
@@ -330,6 +342,10 @@
   <div class="scan-wrap">
     <div class="scan-head"><span class="dot"></span> POST /scan</div>
     <div class="scan-body">
+      <div class="notice">
+        <span class="ico">⚠️</span>
+        <p><strong>Heads up:</strong> This demo runs on Render's free tier (512 MB RAM). Full scans may be slow or time out. For best results, run BRAMHASTRA locally with Ollama.</p>
+      </div>
       <form id="scanForm">
         <div class="row-2">
           <div class="form-group">
