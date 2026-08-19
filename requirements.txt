@@ -1,5 +1,11 @@
 # BRAMHASTRA — AI Red-Teaming Framework
-# Phase 2 — Multi-Model Prompt Injection Testing
+# Deployment Requirements — Render / FastAPI
+
+# Web Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
 
 # Core Dependencies
 langchain>=0.2.0
@@ -21,6 +27,6 @@ colorama>=0.4.6
 json5>=0.9.0
 
 # Optional (for future expansion)
-# langchain-huggingface>=0.1.0  # For newer LangChain versions
+# langchain-huggingface>=0.1.0
 # transformers>=4.30.0
 # torch>=2.0.0
