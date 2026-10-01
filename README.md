@@ -1,4 +1,4 @@
-```markdown
+
 ██████╗ ██████╗  █████╗ ███╗   ███╗██╗  ██╗ █████╗ ███████╗████████╗██████╗   █████╗ 
 ██╔══██╗██╔══██╗██╔══██╗████╗ ████║██║  ██║██╔══██╗██╔════╝╚══██╔══╝██╔══██╗ ██╔══██╗
 ██████╔╝██████╔╝███████║██╔████╔██║███████║███████║███████╗   ██║   ██████╔╝ ███████║
@@ -386,8 +386,6 @@ Do not use BRAMHASTRA to:
 ## Author
 
 ### Nilanjan Chowdhury
-
-**VAPT & Report Publishing Intern @ ISOAH Data Securities**
 **Cybersecurity Researcher · AI/LLM Red Teamer**
 
 * GitHub — https://github.com/CalculusGuy
