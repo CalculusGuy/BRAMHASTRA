@@ -1,0 +1,28 @@
+# Environment variables (CRITICAL: keep API keys secret)
+.env
+.env.*
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated Reports & Outputs
+bramhastra_report.html
+reports/
+poc/
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# OS / IDE files
+.DS_Store
+.vscode/
+.idea/
