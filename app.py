@@ -1,6 +1,4 @@
-# app.py — Minimal FastAPI wrapper for Render health check
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
 
 app = FastAPI(title="BRAMHASTRA v2")
 
