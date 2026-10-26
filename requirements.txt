@@ -6,6 +6,6 @@ PyYAML>=6.0
 python-dotenv>=1.0.0
 colorama>=0.4.6
 
-# Optional for Deployment
-# fastapi>=0.104.1
-# uvicorn>=0.24.0
+# Web Server (For Render Deployment)
+fastapi>=0.104.1
+uvicorn>=0.24.0
